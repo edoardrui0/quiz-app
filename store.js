@@ -58,7 +58,8 @@ const STORE = {
     //     'LeBron James'
     //   ]
     // }
-    // this is a question for whomever views this code. There is no correct answer. Each player was great in their respective eras. 
+    // this is a question for whomever views this code. There is no correct answer. 
+    // Each player was great in their respective eras. If you have questions, feel free to Slack me about it.  
   ],
   quizStarted: false,
   questionNumber: 0,

@@ -1,28 +1,179 @@
 /* Your styles should be mobile-first and responsive */
 
+* {
+  font-family: 'Montserrat';
+}
+
 header {
   display: flex;
   justify-content: center; 
 }
 
 header h1 {
-  /* placeholder font */
-  font-family: 'Courier New', Courier, monospace;
+  margin-top: 30px;
   font-size: 29px;
-  
+  font-weight: bold;
 }
 
-main,
-section  {
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-main section ul {
+.start-screen {
+  width: 300px;
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.start-screen p {
+  font-size: 25px;
+}
+
+.start-screen button {
+  font-size: 20px;
+  width: 50%;
+  margin: 15px auto;
+  height: 50px;
+}
+
+main .questionsAndScores {
   list-style: none;
   padding-left: 0;
+}
+
+main .questionsAndScores li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main form fieldset .question {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+main form fieldset .options {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+main form fieldset .options .answers .answer-container {
+  margin: 23px 0;
+}
+
+.right-answer {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrong-answer {
+  color: red;
+  font-size: 18px;
+}
+
+main form fieldset button {
+  font-size: 20px;
+  border-radius: 15px;
+  border: none;
+  filter: drop-shadow(4px 3px 4px #9b9b9b);
+}
+
+main form fieldset #submit-answer-button {
+  margin-right: 20px;
+}
+
+main .results form fieldset .row {
+  display: flex;
+  justify-content: center;
+}
+
+main .results form fieldset .row .userScoreResults {
+  font-size: 30px;
+}
+
+main .results form fieldset .row .restart-button {
+ margin-top: 15px;
+}
+
+main .results form fieldset .row .restart-button button {
+  font-size: 25px;
+}
+
+/* media query */
+@media only screen and (min-width: 750px) {
+  header h1 {
+    font-size: 45px;
+  }
+
+  .start-screen {
+    width: 700px;
+  }
+
+  .start-screen p {
+    font-size: 40px;
+  }
+
+  .start-screen button {
+    font-size: 35px;
+    height: 75px;
+  }
+
+  main .questionsAndScores {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(216, 111, 51); /* i really tried to make the color of a basketball here lol */
+    padding: 15px;
+    margin-bottom: 25px;
+  }
+
+  main .questionsAndScores li {
+    font-size: 28px;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0);
+  }
+
+  main form fieldset .question {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  main form fieldset .options {
+    font-size: 20px;
+  }
+
+  .right-answer {
+    font-size: 25px;
+    text-decoration: underline;
+  }
+
+  .wrong-answer {
+    color: red;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  main form {
+    width: 700px;
+  }
+
+  main .results form fieldset .row .userScoreResults {
+    font-size: 45px;
+  }
+
+  main .results form fieldset .row .restart-button {
+    margin-top: 35px;
+   }
+
+   main .results form fieldset .row .restart-button button {
+    font-size: 35px;
+  }
 }
 
 

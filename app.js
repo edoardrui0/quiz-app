@@ -75,7 +75,7 @@ function generateAnswersHtml() {
   // moved onto a forEach loop
   answersArray.forEach((answer) => {
     answersHtml += `
-      <div id="option-container-${i}">
+      <div id="option-container-${i}" class="answer-container">
         <input type="radio" name="options" id="option${
           i + 1
         }" value= "${answer}" tabindex ="${i + 1}" required>
@@ -119,13 +119,13 @@ function generateResultsScreen() {
       <form id="js-restart-quiz">
         <fieldset>
           <div class="row">
-            <div class="col-12">
+            <div class="userScoreResults">
               <legend>Your Score is: ${STORE.userScore}/${STORE.questions.length}</legend>
             </div>
           </div>
         
           <div class="row">
-            <div class="col-12">
+            <div class="restart-button">
               <button type="button" id="restart"> Restart Quiz </button>
             </div>
           </div>
