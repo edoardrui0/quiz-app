@@ -12,9 +12,12 @@ header h1 {
   
 }
 
-main section {
+main,
+section  {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 main section ul {
